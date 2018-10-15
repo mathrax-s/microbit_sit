@@ -1,5 +1,5 @@
 //micro:bitとつなぐサンプル
-import processing.pdf.*;
+//加速度XYZ＋ボタンAB
 boolean serialPortSelect;
 int selectSerialPortNum;
 
@@ -62,24 +62,6 @@ void drawMain() {
 }
 
 
-
-
-int recDone=0;
-
-void keyPressed() {
-  if (key==' ') {
-    background(255);
-  }
-  if (key=='s') {
-    if (recDone==0) {
-      recDone=1;
-      beginRecord(PDF, "line_####.pdf");
-    } else {
-      recDone=0;
-      endRecord();
-    }
-  }
-}
 
 //マウスクリックしたとき
 void mousePressed() {
